@@ -38,8 +38,9 @@ windows_smartclose = ''
 disable_plugins = []
 
 # checker
-enable_neomake = false
-enable_ale = true
+# enable_neomake = false
+# enable_ale = true
+lint_on_the_fly = true
 
 # file manager
 # - vimfiler (default)
@@ -47,6 +48,15 @@ enable_ale = true
 # - defx
 filemanager = "nerdtree"
 filetree_direction = "left"
+
+# autocomplete
+# ycm: for YouCompleteMe
+# neocomplcache
+# coc: coc.nvim which also provides language server protocol feature
+# deoplete
+# asyncomplete
+# completor
+autocomplete_method = "deoplete"
 
 # Enable autocomplete layer
 [[layers]]
@@ -59,8 +69,8 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
-# [[layers]]
-# name = "denite"
+[[layers]]
+name = "ctrlp"
 
 [[layers]]
  name = "lang#markdown"
